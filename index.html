@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infográfico: A Influência da IA nas Profissões do Futuro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F9FA;
+            color: #1a202c;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-[#004AAD] text-white text-center py-16 px-4">
+        <h1 class="text-4xl md:text-6xl font-black tracking-tight">A INFLUÊNCIA DA IA NAS PROFISSÕES DO FUTURO</h1>
+        <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-[#ACE2E1]">
+            Imagine um colega de trabalho que nunca dorme e processa informações num piscar de olhos. Esse colega é a Inteligência Artificial, e ela já está transformando o mercado.
+        </p>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+        <section id="kpis" class="py-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <p class="text-6xl font-black text-[#008DDA]">72%</p>
+                    <p class="mt-2 text-lg font-bold">das empresas globais já adotaram IA.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <p class="text-6xl font-black text-[#008DDA]">800 Mi</p>
+                    <p class="mt-2 text-lg font-bold">de trabalhadores podem ser impactados até 2030.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <p class="text-6xl font-black text-[#008DDA]">97 Mi</p>
+                    <p class="mt-2 text-lg font-bold">de novas funções podem surgir até 2025.</p>
+                </div>
+            </div>
+            <div class="mt-12 bg-white rounded-lg shadow-md p-8">
+                 <h2 class="text-3xl font-bold text-center mb-2">Adoção de IA nas Empresas</h2>
+                 <p class="text-center text-gray-600 max-w-2xl mx-auto mb-6">A rápida adoção da IA não é uma tendência futura, é a realidade atual. A maioria das empresas já utiliza essa tecnologia para otimizar processos, gerando uma demanda por novas habilidades e transformando o ambiente de trabalho.</p>
+                <div class="chart-container">
+                    <canvas id="adoptionChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="new-ecosystem" class="py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center">O Novo Ecossistema de Trabalho</h2>
+            <p class="mt-4 text-center text-lg text-gray-600 max-w-3xl mx-auto">A IA não está eliminando profissões, mas sim redefinindo-as. Tarefas repetitivas são automatizadas, enquanto novas funções estratégicas e criativas emergem, exigindo uma colaboração inteligente entre humanos e máquinas.</p>
+
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h3 class="text-2xl font-bold text-[#004AAD]">Profissões que se Reinventam</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li class="flex items-start"><span class="text-2xl mr-4">🩺</span><div><strong class="block">Saúde:</strong> Diagnósticos mais rápidos e precisos com IA, permitindo que médicos foquem no tratamento e cuidado ao paciente.</div></li>
+                        <li class="flex items-start"><span class="text-2xl mr-4">⚖️</span><div><strong class="block">Direito:</strong> Análise de vastos volumes de documentos em segundos, otimizando a pesquisa e preparação de casos.</div></li>
+                        <li class="flex items-start"><span class="text-2xl mr-4">📢</span><div><strong class="block">Marketing:</strong> Personalização de campanhas e análise preditiva do comportamento do consumidor para estratégias mais eficazes.</div></li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <h3 class="text-2xl font-bold text-[#004AAD]">As Novas Profissões Criadas pela IA</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li class="flex items-start"><span class="text-2xl mr-4">🤖</span><div><strong class="block">Engenheiro de Prompt:</strong> Especialista em "conversar" com IAs para extrair os melhores resultados possíveis.</div></li>
+                        <li class="flex items-start"><span class="text-2xl mr-4">📊</span><div><strong class="block">Curador de Dados de IA:</strong> Garante a qualidade e a imparcialidade dos dados que treinam os algoritmos.</div></li>
+                        <li class="flex items-start"><span class="text-2xl mr-4">🤔</span><div><strong class="block">Especialista em Ética de IA:</strong> Assegura que os sistemas de IA sejam justos, transparentes e sem preconceitos.</div></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="skills-kit" class="py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center">O Kit de Competências para o Futuro</h2>
+            <p class="mt-4 text-center text-lg text-gray-600 max-w-3xl mx-auto">Para prosperar neste novo cenário, é crucial desenvolver um conjunto equilibrado de competências. O gráfico abaixo destaca a importância relativa das habilidades mais demandadas, com ênfase nas capacidades exclusivamente humanas que a IA não pode replicar.</p>
+
+            <div class="mt-12 bg-white rounded-lg shadow-md p-8">
+                <div class="chart-container" style="height: 450px;">
+                    <canvas id="skillsChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="practical-guide" class="py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center">Guia Prático: Comece sua Preparação HOJE</h2>
+            <p class="mt-4 text-center text-lg text-gray-600 max-w-3xl mx-auto">A adaptação à era da IA é uma jornada contínua. Siga estes passos para se manter relevante e competitivo no mercado de trabalho.</p>
+
+            <div class="mt-12 max-w-2xl mx-auto">
+                <div class="space-y-8">
+                    <div class="flex">
+                        <div class="flex flex-col items-center mr-4">
+                            <div>
+                                <div class="flex items-center justify-center w-12 h-12 bg-[#008DDA] rounded-full text-white font-bold text-xl">1</div>
+                            </div>
+                            <div class="w-px h-full bg-[#41C9E2]"></div>
+                        </div>
+                        <div class="pb-8">
+                            <h3 class="text-xl font-bold text-[#004AAD]">Adote a Aprendizagem Contínua</h3>
+                            <p class="mt-2 text-gray-700">Sua formação não termina com um diploma. O futuro pertence aos curiosos. A mentalidade de "lifelong learning" é seu maior ativo.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="flex flex-col items-center mr-4">
+                            <div>
+                                <div class="flex items-center justify-center w-12 h-12 bg-[#008DDA] rounded-full text-white font-bold text-xl">2</div>
+                            </div>
+                            <div class="w-px h-full bg-[#41C9E2]"></div>
+                        </div>
+                        <div class="pb-8">
+                            <h3 class="text-xl font-bold text-[#004AAD]">Seja um Explorador de IA</h3>
+                            <p class="mt-2 text-gray-700">Dedique tempo para experimentar ferramentas de IA. Crie uma imagem, peça para resumir um texto, planeje um projeto. A familiaridade gera confiança.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex">
+                        <div class="flex flex-col items-center mr-4">
+                             <div>
+                                <div class="flex items-center justify-center w-12 h-12 bg-[#008DDA] rounded-full text-white font-bold text-xl">3</div>
+                            </div>
+                            <div class="w-px h-full bg-[#41C9E2]"></div>
+                        </div>
+                        <div class="pb-8">
+                            <h3 class="text-xl font-bold text-[#004AAD]">Invista na sua Educação</h3>
+                            <p class="mt-2 text-gray-700">Procure cursos online (Coursera, edX), workshops e certificações sobre IA, análise de dados e as "soft skills" que identificou como necessárias.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex">
+                        <div class="flex flex-col items-center mr-4">
+                             <div>
+                                <div class="flex items-center justify-center w-12 h-12 bg-[#008DDA] rounded-full text-white font-bold text-xl">4</div>
+                            </div>
+                        </div>
+                        <div class="pb-8">
+                            <h3 class="text-xl font-bold text-[#004AAD]">Construa Pontes, não Muros</h3>
+                            <p class="mt-2 text-gray-700">Participe de webinars, siga especialistas em IA e converse com colegas sobre como a tecnologia está impactando seu setor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="references" class="py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center">Referências</h2>
+            <div class="mt-8 max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8">
+                <ol class="list-decimal list-inside space-y-4 text-gray-700">
+                    <li>World Economic Forum. (2020). <i>The Future of Jobs Report 2020</i>.</li>
+                    <li>McKinsey Global Institute. (2017). <i>Jobs lost, jobs gained: Workforce transitions in a time of automation</i>.</li>
+                    <li>IBM. (2022). <i>Global AI Adoption Index 2022</i>.</li>
+                    <li>Stanford University. (2023). <i>Artificial Intelligence Index Report 2023</i>.</li>
+                    <li>Gartner. Publicações anuais sobre <i>Top Strategic Technology Trends</i>.</li>
+                    <li>PwC. (2023). <i>Global Artificial Intelligence Study: Sizing the prize</i>.</li>
+                    <li>Accenture. (2023). <i>A New Era of Generative AI for Everyone</i>.</li>
+                    <li>Brasil. Ministério da Ciência, Tecnologia e Inovações. (2021). <i>Estratégia Brasileira de Inteligência Artificial – EBIA</i>.</li>
+                    <li>MIT Technology Review. Seção sobre <i>Inteligência Artificial</i>.</li>
+                    <li>Plataformas de cursos como Coursera, edX, e LinkedIn Learning.</li>
+                </ol>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-[#004AAD] text-white text-center py-12 px-4">
+         <h2 class="text-3xl md:text-4xl font-bold">O Futuro é uma Parceria Humano-IA</h2>
+         <blockquote class="mt-6 text-lg md:text-2xl italic max-w-3xl mx-auto border-l-4 border-[#41C9E2] pl-6">
+            "A pergunta não é 'Quais empregos a IA vai roubar?', mas sim 'Quais novos problemas incríveis poderemos resolver com a ajuda da IA?'"
+         </blockquote>
+         <p class="mt-8 text-[#ACE2E1]">A revolução da IA está acontecendo. Seja um participante ativo, não um espectador.</p>
+
+         <div class="mt-12 pt-8 border-t border-blue-500/50 text-sm text-[#ACE2E1]">
+            <p class="font-bold">Laisson Germano.</p>
+            <p>Pesquisador FIEMG / IEL e Mestrando do Ciência da Computação no VERLAB - UFMG.</p>
+            <a href="https://br.linkedin.com/in/laissongermano" target="_blank" rel="noopener noreferrer" class="mt-1 inline-block underline hover:text-white">LinkedIn</a>
+         </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            const brandColors = {
+                deepBlue: '#004AAD',
+                brightBlue: '#008DDA',
+                cyan: '#41C9E2',
+                lightCyan: '#ACE2E1',
+                darkText: '#1a202c',
+            };
+
+            const wrapLabel = (str, maxWidth) => {
+                if (str.length <= maxWidth) {
+                    return str;
+                }
+                const words = str.split(' ');
+                let lines = [];
+                let currentLine = words[0];
+                for (let i = 1; i < words.length; i++) {
+                    if (currentLine.length + words[i].length + 1 < maxWidth) {
+                        currentLine += ' ' + words[i];
+                    } else {
+                        lines.push(currentLine);
+                        currentLine = words[i];
+                    }
+                }
+                lines.push(currentLine);
+                return lines;
+            };
+            
+            const tooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                  return label.join(' ');
+                } else {
+                  return label;
+                }
+            };
+            
+            const defaultChartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: brandColors.darkText,
+                            font: {
+                                size: 14,
+                                family: 'Inter'
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        },
+                        titleFont: {
+                            size: 14,
+                            family: 'Inter'
+                        },
+                        bodyFont: {
+                            size: 12,
+                            family: 'Inter'
+                        },
+                        backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                        titleColor: '#ffffff',
+                        bodyColor: '#ffffff'
+                    }
+                }
+            };
+
+            const adoptionCtx = document.getElementById('adoptionChart').getContext('2d');
+            new Chart(adoptionCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Adotaram IA', 'Não Adotaram'],
+                    datasets: [{
+                        label: 'Adoção de IA',
+                        data: [72, 28],
+                        backgroundColor: [brandColors.brightBlue, brandColors.lightCyan],
+                        borderColor: [brandColors.brightBlue, brandColors.lightCyan],
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    ...defaultChartOptions,
+                    cutout: '70%',
+                }
+            });
+
+            const skillsCtx = document.getElementById('skillsChart').getContext('2d');
+            new Chart(skillsCtx, {
+                type: 'bar',
+                data: {
+                    labels: [
+                        wrapLabel('Pensamento Crítico e Resolução de Problemas Complexos', 25),
+                        wrapLabel('Criatividade e Originalidade', 25),
+                        wrapLabel('Inteligência Emocional e Empatia', 25),
+                        wrapLabel('Liderança e Influência Social', 25),
+                        wrapLabel('Alfabetização em Dados', 25),
+                        wrapLabel('Domínio de Ferramentas de IA', 25),
+                        wrapLabel('Noções de Machine Learning', 25)
+                    ],
+                    datasets: [{
+                        label: 'Importância Relativa',
+                        data: [95, 92, 90, 88, 85, 80, 70],
+                        backgroundColor: [
+                           brandColors.deepBlue,
+                           brandColors.brightBlue,
+                           brandColors.brightBlue,
+                           brandColors.brightBlue,
+                           brandColors.cyan,
+                           brandColors.cyan,
+                           brandColors.cyan
+                        ],
+                        borderColor: '#ffffff',
+                        borderWidth: 2,
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    ...defaultChartOptions,
+                    indexAxis: 'y',
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                color: brandColors.darkText,
+                                font: {
+                                    size: 12,
+                                    family: 'Inter'
+                                }
+                            }
+                        },
+                        x: {
+                            ticks: {
+                                color: brandColors.darkText,
+                            }
+                        }
+                    },
+                    plugins: {
+                        ...defaultChartOptions.plugins,
+                         legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
