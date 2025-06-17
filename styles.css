@@ -1,0 +1,21 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8F9FA;
+    color: #1a202c;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    max-height: 400px;
+}
+
+@media (min-width: 768px) {
+    .chart-container {
+        height: 350px;
+    }
+}

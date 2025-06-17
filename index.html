@@ -9,30 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #F8F9FA;
-            color: #1a202c;
-        }
-        .chart-container {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            height: 300px;
-            max-height: 400px;
-        }
-        @media (min-width: 768px) {
-            .chart-container {
-                height: 350px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body class="antialiased">
-
     <header class="bg-[#004AAD] text-white text-center py-16 px-4">
         <h1 class="text-4xl md:text-6xl font-black tracking-tight">A INFLUÊNCIA DA IA NAS PROFISSÕES DO FUTURO</h1>
         <p class="mt-4 text-lg md:text-xl max-w-3xl mx-auto text-[#ACE2E1]">
@@ -41,25 +20,24 @@
     </header>
 
     <main class="container mx-auto px-4 sm:px-6 lg:px-8">
-
         <section id="kpis" class="py-16">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div class="bg-white rounded-lg shadow-md p-8">
-                    <p class="text-6xl font-black text-[#008DDA]">72%</p>
-                    <p class="mt-2 text-lg font-bold">das empresas globais já adotaram IA.</p>
+                    <p class="text-6xl font-black text-[#008DDA]">42%</p>
+                    <p class="mt-2 text-lg font-bold">das empresas já implementaram IA ativamente.</p>
                 </div>
                 <div class="bg-white rounded-lg shadow-md p-8">
-                    <p class="text-6xl font-black text-[#008DDA]">800 Mi</p>
-                    <p class="mt-2 text-lg font-bold">de trabalhadores podem ser impactados até 2030.</p>
+                    <p class="text-6xl font-black text-[#008DDA]">78 Mi</p>
+                    <p class="mt-2 text-lg font-bold">de empregos (ganho líquido) devem surgir até 2030.</p>
                 </div>
                 <div class="bg-white rounded-lg shadow-md p-8">
-                    <p class="text-6xl font-black text-[#008DDA]">97 Mi</p>
-                    <p class="mt-2 text-lg font-bold">de novas funções podem surgir até 2025.</p>
+                    <p class="text-6xl font-black text-[#008DDA]">16 Mi</p>
+                    <p class="mt-2 text-lg font-bold">de brasileiros precisarão se requalificar até 2030.</p>
                 </div>
             </div>
             <div class="mt-12 bg-white rounded-lg shadow-md p-8">
-                 <h2 class="text-3xl font-bold text-center mb-2">Adoção de IA nas Empresas</h2>
-                 <p class="text-center text-gray-600 max-w-2xl mx-auto mb-6">A rápida adoção da IA não é uma tendência futura, é a realidade atual. A maioria das empresas já utiliza essa tecnologia para otimizar processos, gerando uma demanda por novas habilidades e transformando o ambiente de trabalho.</p>
+                 <h2 class="text-3xl font-bold text-center mb-2">Maturidade da Adoção de IA nas Empresas</h2>
+                 <p class="text-center text-gray-600 max-w-2xl mx-auto mb-6">A adoção de IA não é um processo binário. Dados recentes mostram que, enquanto uma parte significativa das empresas já implementou a tecnologia, uma parcela igualmente grande ainda está na fase de exploração, indicando um vasto potencial de crescimento e aprofundamento.</p>
                 <div class="chart-container">
                     <canvas id="adoptionChart"></canvas>
                 </div>
@@ -161,24 +139,33 @@
             </div>
         </section>
 
-        <section id="references" class="py-16">
+       <section id="references" class="py-16">
             <h2 class="text-3xl md:text-4xl font-bold text-center">Referências</h2>
             <div class="mt-8 max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8">
-                <ol class="list-decimal list-inside space-y-4 text-gray-700">
-                    <li>World Economic Forum. (2020). <i>The Future of Jobs Report 2020</i>.</li>
-                    <li>McKinsey Global Institute. (2017). <i>Jobs lost, jobs gained: Workforce transitions in a time of automation</i>.</li>
-                    <li>IBM. (2022). <i>Global AI Adoption Index 2022</i>.</li>
-                    <li>Stanford University. (2023). <i>Artificial Intelligence Index Report 2023</i>.</li>
-                    <li>Gartner. Publicações anuais sobre <i>Top Strategic Technology Trends</i>.</li>
-                    <li>PwC. (2023). <i>Global Artificial Intelligence Study: Sizing the prize</i>.</li>
-                    <li>Accenture. (2023). <i>A New Era of Generative AI for Everyone</i>.</li>
-                    <li>Brasil. Ministério da Ciência, Tecnologia e Inovação. (2021). <i>Estratégia Brasileira de Inteligência Artificial – EBIA</i>.</li>
-                    <li>MIT Technology Review. Seção sobre <i>Inteligência Artificial</i>.</li>
-                    <li>Plataformas de cursos como Coursera, edX, e LinkedIn Learning.</li>
+                <ol class="list-decimal list-inside space-y-3 text-gray-700 text-xs md:text-sm">
+                    <li><b>World Economic Forum (2025).</b> <i>Future of Jobs Report 2025.</i></li>
+                    <li><b>McKinsey Global Institute (2017).</b> <i>Jobs lost, jobs gained: Workforce transitions in a time of automation.</i></li>
+                    <li><b>IBM (2023).</b> <i>Global AI Adoption Index 2023.</i></li>
+                    <li><b>McKinsey & Company (2024).</b> <i>The state of AI in 2024: A midterm report.</i></li>
+                    <li><b>Brasil, Ministério da Ciência, Tecnologia e Inovação (2021).</b> <i>Estratégia Brasileira de Inteligência Artificial (EBIA).</i></li>
+                    <li><b>PwC (2018).</b> <i>UK Economic Outlook.</i></li>
+                    <li><b>Stanford University (2024).</b> <i>Artificial Intelligence Index Report 2024.</i></li>
+                    <li><b>Accenture (2023).</b> <i>A New Era of Generative AI for Everyone.</i></li>
+                    <li><b>OECD (2023).</b> <i>OECD Employment Outlook 2023: Artificial Intelligence and the Labour Market.</i></li>
+                    <li><b>Goldman Sachs (2023).</b> <i>The Potentially Large Effects of Artificial Intelligence on Economic Growth.</i></li>
+                    <li><b>Brynjolfsson, E., & McAfee, A. (2014).</b> <i>The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies.</i></li>
+                    <li><b>Autor, D. H. (2015).</b> "Why Are There Still So Many Jobs? The History and Future of Workplace Automation." <i>Journal of Economic Perspectives.</i></li>
+                    <li><b>Acemoglu, D., & Restrepo, P. (2020).</b> "The Wrong Kind of AI? Artificial Intelligence and the Future of Labor Demand." <i>Cambridge-INET Working Paper.</i></li>
+                    <li><b>Kaplan, J. (2016).</b> <i>Humans Need Not Apply: A Guide to Wealth and Work in the Age of Artificial Intelligence.</i></li>
+                    <li><b>Ford, M. (2015).</b> <i>Rise of the Robots: Technology and the Threat of a Jobless Future.</i></li>
+                    <li><b>Agrawal, A., Gans, J., & Goldfarb, A. (2018).</b> <i>Prediction Machines: The Simple Economics of Artificial Intelligence.</i></li>
+                    <li><b>LinkedIn (2024).</b> <i>Future of Work Report: AI at Work.</i></li>
+                    <li><b>Gartner (2024).</b> <i>Top Strategic Technology Trends 2024.</i></li>
+                    <li><b>Deloitte (2023).</b> <i>State of AI in the Enterprise, 6th Edition.</i></li>
+                    <li><b>Banco Mundial (2022).</b> <i>Digital Economy for Latin America and the Caribbean (DE4LAC).</i></li>
                 </ol>
             </div>
         </section>
-
     </main>
 
     <footer class="bg-[#004AAD] text-white text-center py-12 px-4">
@@ -191,161 +178,12 @@
          <div class="mt-12 pt-8 border-t border-blue-500/50 text-sm text-[#ACE2E1]">
             <p class="font-bold">Laisson Germano.</p>
             <p>Pesquisador FIEMG / IEL e Mestrando em Ciência da Computação no VERLAB - UFMG.</p>
-            <a href="https://br.linkedin.com/in/laissongermano" target="_blank" rel="noopener noreferrer" class="mt-1 inline-block underline hover:text-white">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/laissongermano/" target="_blank" rel="noopener noreferrer" class="mt-1 inline-block underline hover:text-white">LinkedIn</a>
+            <a href="https://github.com/laissongermano" target="_blank" rel="noopener noreferrer" class="mt-1 inline-block underline hover:text-white">Github</a>
          </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-
-            const brandColors = {
-                deepBlue: '#004AAD',
-                brightBlue: '#008DDA',
-                cyan: '#41C9E2',
-                lightCyan: '#ACE2E1',
-                darkText: '#1a202c',
-            };
-
-            const wrapLabel = (str, maxWidth) => {
-                if (str.length <= maxWidth) {
-                    return str;
-                }
-                const words = str.split(' ');
-                let lines = [];
-                let currentLine = words[0];
-                for (let i = 1; i < words.length; i++) {
-                    if (currentLine.length + words[i].length + 1 < maxWidth) {
-                        currentLine += ' ' + words[i];
-                    } else {
-                        lines.push(currentLine);
-                        currentLine = words[i];
-                    }
-                }
-                lines.push(currentLine);
-                return lines;
-            };
-            
-            const tooltipTitleCallback = (tooltipItems) => {
-                const item = tooltipItems[0];
-                let label = item.chart.data.labels[item.dataIndex];
-                if (Array.isArray(label)) {
-                  return label.join(' ');
-                } else {
-                  return label;
-                }
-            };
-            
-            const defaultChartOptions = {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: {
-                        labels: {
-                            color: brandColors.darkText,
-                            font: {
-                                size: 14,
-                                family: 'Inter'
-                            }
-                        }
-                    },
-                    tooltip: {
-                        callbacks: {
-                            title: tooltipTitleCallback
-                        },
-                        titleFont: {
-                            size: 14,
-                            family: 'Inter'
-                        },
-                        bodyFont: {
-                            size: 12,
-                            family: 'Inter'
-                        },
-                        backgroundColor: 'rgba(0, 0, 0, 0.7)',
-                        titleColor: '#ffffff',
-                        bodyColor: '#ffffff'
-                    }
-                }
-            };
-
-            const adoptionCtx = document.getElementById('adoptionChart').getContext('2d');
-            new Chart(adoptionCtx, {
-                type: 'doughnut',
-                data: {
-                    labels: ['Adotaram IA', 'Não Adotaram'],
-                    datasets: [{
-                        label: 'Adoção de IA',
-                        data: [72, 28],
-                        backgroundColor: [brandColors.brightBlue, brandColors.lightCyan],
-                        borderColor: [brandColors.brightBlue, brandColors.lightCyan],
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    ...defaultChartOptions,
-                    cutout: '70%',
-                }
-            });
-
-            const skillsCtx = document.getElementById('skillsChart').getContext('2d');
-            new Chart(skillsCtx, {
-                type: 'bar',
-                data: {
-                    labels: [
-                        wrapLabel('Pensamento Crítico e Resolução de Problemas Complexos', 20),
-                        wrapLabel('Criatividade e Originalidade', 20),
-                        wrapLabel('Inteligência Emocional e Empatia', 20),
-                        wrapLabel('Liderança e Influência Social', 20),
-                        wrapLabel('Alfabetização em Dados', 20),
-                        wrapLabel('Domínio de Ferramentas de IA', 20),
-                        wrapLabel('Noções de Machine Learning', 20)
-                    ],
-                    datasets: [{
-                        label: 'Importância Relativa',
-                        data: [95, 92, 90, 88, 85, 80, 70],
-                        backgroundColor: [
-                           brandColors.deepBlue,
-                           brandColors.brightBlue,
-                           brandColors.brightBlue,
-                           brandColors.brightBlue,
-                           brandColors.cyan,
-                           brandColors.cyan,
-                           brandColors.cyan
-                        ],
-                        borderColor: '#ffffff',
-                        borderWidth: 2,
-                        borderRadius: 4
-                    }]
-                },
-                options: {
-                    ...defaultChartOptions,
-                    indexAxis: 'y',
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            ticks: {
-                                color: brandColors.darkText,
-                                font: {
-                                    size: 12,
-                                    family: 'Inter'
-                                },
-                                autoSkip: false
-                            }
-                        },
-                        x: {
-                            ticks: {
-                                color: brandColors.darkText,
-                            }
-                        }
-                    },
-                    plugins: {
-                        ...defaultChartOptions.plugins,
-                         legend: {
-                            display: false
-                        }
-                    }
-                }
-            });
-        });
-    </script>
+    <script src="js/config.js"></script>
+    <script src="js/charts.js"></script>
 </body>
 </html>
